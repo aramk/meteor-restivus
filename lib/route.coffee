@@ -35,9 +35,9 @@ class @Route
 
       # Setup endpoints on route
       fullPath = @api._config.apiPath + @path
-      _.each allowedMethods, (method) ->
+      _.each allowedMethods, (method) =>
         endpoint = self.endpoints[method]
-        JsonRoutes.add method, fullPath, (req, res) ->
+        JsonRoutes.add method, fullPath, (req, res) =>
           # Add function to endpoint context for indicating a response has been initiated manually
           responseInitiated = false
           doneFunc = ->
@@ -62,8 +62,8 @@ class @Route
             if res.headersSent and not responseInitiated
               throw new Error "Must call this.done() after handling endpoint response manually: #{method} #{fullPath}"
           catch error
-            # Do exactly what Iron Router would have done, to avoid changing the API
-            ironRouterSendErrorToResponse(error, req, res);
+            errorHandler = @api._config.errorHandler ? ironRouterSendErrorToResponse
+            errorHandler(error, req, res)
             return
 
           if responseInitiated
