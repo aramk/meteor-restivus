@@ -296,7 +296,7 @@ class @Restivus
           @userId = @user?._id
 
         # Call the login hook with the authenticated user attached
-        loginResult = self._config.onLoggedIn.call this
+        loginResult = self._config.onLoggedIn.call(@)
         if loginResult?
           _.extend(auth, extra: loginResult)
 
