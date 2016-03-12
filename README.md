@@ -1,4 +1,4 @@
-# Restivus [v0.8.4](https://github.com/kahmali/meteor-restivus/blob/devel/CHANGELOG.md#change-log) [![Build Status](https://travis-ci.org/kahmali/meteor-restivus.svg)](https://travis-ci.org/kahmali/meteor-restivus)
+# Restivus [v0.8.8](https://github.com/kahmali/meteor-restivus/blob/devel/CHANGELOG.md#change-log) [![Build Status](https://travis-ci.org/kahmali/meteor-restivus.svg)](https://travis-ci.org/kahmali/meteor-restivus)
 
 #### REST APIs for the Best of Us!
 
@@ -1127,6 +1127,8 @@ We can call our `POST /articles/:id/comments` endpoint the following way. Note t
 ```bash
 curl -d "message=Some message details" http://localhost:3000/api/articles/3/comments
 ```
+
+_**Note: There is a 50mb limit on requests. If you need this limit increased, please file a GitHub Issue.**_
 
 ## Authenticating
 

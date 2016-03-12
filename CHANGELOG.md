@@ -1,5 +1,31 @@
 # Change Log
 
+## [v0.8.8] - 2016-03-10
+
+#### Changed
+- Update to the latest version of `simple:json-routes` ([v2.1.0](https://github.com/stubailo/meteor-rest/tree/master/packages/json-routes#210))
+  - Resolves errors when using alongside Iron Router ([#185][]) 
+
+
+## [v0.8.7] - 2016-02-24
+
+#### Fixed
+- Declare dependency on accounts-password ([#169][])
+
+
+## [v0.8.6] - 2016-02-24
+
+#### Changed
+- Update to the latest version of `simple:json-routes` ([v2.0.1](https://github.com/stubailo/meteor-rest/tree/master/packages/json-routes#201))
+  - Increases max request size to 50mb ([#78][] and [#179][]) 
+
+
+## [v0.8.5] - 2016-02-24
+
+#### Fixed
+- Remove `Route` class from global namespace ([#170][])
+
+
 ## [v0.8.4] - 2015-08-18
 
 #### Fixed
@@ -320,6 +346,10 @@ _Note: API-breaking changes are in **bold**_
 
 
 
+[v0.8.8]:  https://github.com/kahmali/meteor-restivus/compare/v0.8.7...v0.8.8 "Version 0.8.8"
+[v0.8.7]:  https://github.com/kahmali/meteor-restivus/compare/v0.8.6...v0.8.7 "Version 0.8.7"
+[v0.8.6]:  https://github.com/kahmali/meteor-restivus/compare/v0.8.5...v0.8.6 "Version 0.8.6"
+[v0.8.5]:  https://github.com/kahmali/meteor-restivus/compare/v0.8.4...v0.8.5 "Version 0.8.5"
 [v0.8.4]:  https://github.com/kahmali/meteor-restivus/compare/v0.8.3...v0.8.4 "Version 0.8.4"
 [v0.8.3]:  https://github.com/kahmali/meteor-restivus/compare/v0.8.2...v0.8.3 "Version 0.8.3"
 [v0.8.2]:  https://github.com/kahmali/meteor-restivus/compare/v0.8.1...v0.8.2 "Version 0.8.2"
@@ -368,9 +398,14 @@ _Note: API-breaking changes are in **bold**_
 [#48]:                           https://github.com/kahmali/meteor-restivus/issues/48                   "Issue #48"
 [#49]:                           https://github.com/kahmali/meteor-restivus/issues/49                   "Issue #49"
 [#68]:                           https://github.com/kahmali/meteor-restivus/issues/68                   "Issue #68"
+[#78]:                           https://github.com/kahmali/meteor-restivus/issues/78                   "Issue #78"
 [#79]:                           https://github.com/kahmali/meteor-restivus/issues/79                   "Issue #79"
 [#81]:                           https://github.com/kahmali/meteor-restivus/issues/81                   "Issue #81"
 [#91]:                           https://github.com/kahmali/meteor-restivus/issues/91                   "Issue #91"
 [#99]:                           https://github.com/kahmali/meteor-restivus/issues/99                   "Issue #99"
 [#118]:                          https://github.com/kahmali/meteor-restivus/issues/118                  "Issue #118"
 [#121]:                          https://github.com/kahmali/meteor-restivus/issues/121                  "Issue #121"
+[#169]:                          https://github.com/kahmali/meteor-restivus/issues/169                  "Issue #169"
+[#170]:                          https://github.com/kahmali/meteor-restivus/issues/170                  "Issue #170"
+[#179]:                          https://github.com/kahmali/meteor-restivus/issues/179                  "Issue #179"
+[#185]:                          https://github.com/kahmali/meteor-restivus/issues/185                  "Issue #185"
